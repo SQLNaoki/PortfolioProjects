@@ -131,13 +131,3 @@ Where Death.continent is not null
 
 Select *
 From PercentPopulationVaccinated
-
-
-	
- 
-
-Select location, Max(cast(total_deaths as int))as DeathCount
-From [Portfolio Project]..[Covid Deaths]
-Where continent is null
-Group by location
-order by deathcount Desc
